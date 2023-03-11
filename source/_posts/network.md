@@ -60,3 +60,35 @@ frame + package + segement + data
 #### Network
 一點傳到另一點
 - IP
+
+#### Physical
+電線、光纖
+
+---
+
+#### Vlan
+- PVID : 可以從哪個 Vlan 出去
+- Tagged port: 出去時帶有vlan tag
+- Untagged port: 出去時不帶有vlan tag
+
+#### DHCP
+由於要節省IP
+我們設備並沒有IP只有Mac，因此當我們用時需請求IP
+1. 探索: 透過Broadcast 發送 UDP 請求到 DHCP Server
+2. 提供: DHCP 發送IP到我們設備
+3. 回覆: 回傳我們接受採用
+4. 確認: DHCP回傳訊息告知以保留
+
+#### NAT
+1. 公司或學校擁有IP有限，因此我們對外統一由一個IP來通訊
+2. 透過 DHCP 得到的IP可能是subnet ，無法直接對外溝通
+
+#### NAT + DHCP
+WIFI盒 透過DHCP 動態分配 IP給電腦、手機
+對外統一由一個IP來通訊
+
+#### ARP
+IP ---- MAC
+
+
+

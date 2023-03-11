@@ -14,6 +14,7 @@ tags: yolo
 #### Backbone
 Darknet 53
 - all 捲積層
+  <img src="../yolov3/Screen_Shot_2020-06-24_at_12.53.56_PM_QQoF5AO.png" width=300pt height=400pt title="darknet_53">
 
 #### Neck
 1. 產生19x19
@@ -36,3 +37,6 @@ n x n x 255
 1. 19 x 19 感受野76x76 : 預測大物體
 2. 38 x 38 感受野38x38 : 預測中物體
 3. 76 x 76 感受野19x19 : 預測小物體
+
+
+#### anchor
