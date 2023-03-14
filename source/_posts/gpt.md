@@ -2,6 +2,7 @@
 title: gpt
 date: 2023-03-08 08:43:28
 tags: NLP
+katex: true
 ---
 
 #### NLP 兩大模型

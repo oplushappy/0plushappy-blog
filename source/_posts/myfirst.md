@@ -3,6 +3,7 @@ title: Markdown語法
 date: 2023-3-5 
 updated: 2023-3-5
 description: 語法快速入門
+katex: true
 ---
 
 最近開始寫文章  

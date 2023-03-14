@@ -2,6 +2,7 @@
 title: yolov3
 date: 2023-03-06 10:13:32
 tags: yolo
+katex: true
 ---
 ### yolo演進
 <!-- <img src="source\_posts\yolov3\evolve.png"> -->

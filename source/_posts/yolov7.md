@@ -2,6 +2,7 @@
 title: yolov7
 date: 2023-03-10 21:52:02
 tags: yolo
+katex: true
 ---
 ### Vgg
 2014 曇花一現 : 捲積可以用多層3 x 3

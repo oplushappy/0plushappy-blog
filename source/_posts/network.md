@@ -2,6 +2,7 @@
 title: network manage
 date: 2023-03-06 13:42:31
 tags:
+katex: true
 ---
 以下是我上網管的課摘要
 #### 網路

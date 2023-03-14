@@ -2,6 +2,7 @@
 title: network security
 date: 2023-03-06 20:32:49
 tags:
+katex: true
 ---
 
 #### 設備
@@ -43,6 +44,17 @@ ARP : IP - Mac
 ARP Spoofing
 - 中間人 : 將自己Mac回復
 - 阻斷式 : 將被攻擊者的Mac回覆給所有人
+
+查看arp
+```
+show arp
+show arp [ip || MAC]
+```
+設定
+```
+configure terminal
+arp ip MAC ethernet 1/1/x
+```
 #### Port-Security
 port - MAC
 查看switch 指令

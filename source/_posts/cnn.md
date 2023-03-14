@@ -2,6 +2,7 @@
 title: CNN
 date: 2023-03-07 16:17:53
 tags: Deep learning
+katex: true
 ---
 - 捲積 : 濃縮特徵
 - 最大池化 : 提取特徵

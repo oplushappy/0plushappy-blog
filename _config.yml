@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: OPH BLOG
 subtitle: ''
 description: ''
 keywords:
@@ -107,3 +107,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+markdown:
+ plugins:
+   - plugin:
+     name: '@neilsustc/markdown-it-katex'
+     options:
+       strict: false
