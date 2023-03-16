@@ -6,7 +6,7 @@ katex: true
 ---
 ### yolo演進
 <!-- <img src="source\_posts\yolov3\evolve.png"> -->
-![圖片](..\yolov3\evolve.png)
+<img src="..\yolov3\evolve.png" alt="演進" title="這是演進" >
 
 ### yolo v3 原理
 **Backbone + Neck + Predict** 
