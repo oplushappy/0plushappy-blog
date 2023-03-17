@@ -61,13 +61,53 @@ katex: true
    [-1, 1, Conv, [160, 1, 1]],  # 22
    [[-1, -11], 1, Shortcut, [1]],  # 23
 ```
-<img src="./yolov7/Snipaste_2023-03-16_20-20-49.png" width=3000>
+<img src="../yolov7/Snipaste_2023-03-16_20-20-49.png" width=3000>
 
 ### 模型縮放
 因為ELAN涉及拼接，因此縮放需特別設計
 對應關係 : 
 1. yolov7 $\rightarrow$ yolov7x
-  1. 額外多一條由兩個卷積構成支路 : 擴大模型深度
-  2. 特徵輸入數量，concat輸出數量，過度卷積通道數 變成 1.25倍
+   1. 額外多一條由兩個卷積構成支路 : 擴大模型深度
+   2. 特徵輸入數量，concat輸出數量，過度卷積通道數 變成 1.25倍 : 擴大模型寬度
+2. yolov7-w6 $\rightarrow$ yolov7-e6 $\rightarrow$ yolov7-e6e $\rightarrow$ yolov7-d6
 
 ## Trainable bag-of-freebies
+### 結構重參數化
+構造一系列結構(用於訓練)，將其參數等架轉換為另一組參數(用於推理)，從而將一系列結構轉成另一系列
+在vgg取得不錯結果
+
+但直接在殘差模塊上套用，精度降低
+本來就有橫等連接(identity connection)，會和RepConv起衝突
+- 因此橫等連接不要用RepConv或必須使用RepConvN
+<img src="../yolov7/repcov.png">
+
+- ELAN中卷積直接傳給拼接層也不能直接用RepConv，得用RepConv
+
+- 0.1 版 只有最後使用，且不是在拼接或殘差上使用，使用(b)
+```python
+[75, 1, RepConv, [256, 3, 1]],
+[88, 1, RepConv, [512, 3, 1]],
+[101, 1, RepConv, [1024, 3, 1]],
+```
+
+### 新的標籤分類方法
+Deep supervision : 
+- 淺層額外加輔助頭幫忙計算loss，也會反向傳播更新參數
+<img src="../yolov7/ds.png">
+
+label assignmen:
+<img src="../yolov7/dp2.png" width=600>
+- hard label: 真實值(ground truth) 和 檢測值 做LOSS，再來給每個格子標籤
+
+- soft label: ground truth 和 檢測值 先透過分配器，再跟 ground truth做 Loss來分配
+
+分配器: YOLOX也有用到
+```PY
+compute_loss_ota = ComputeLossOTA(model)  # init loss class
+compute_loss = ComputeLoss(model)  # init loss class
+```
+
+### 有用到訓練方法
+1. BN層
+2. Implicit knowledge
+3. EMA
