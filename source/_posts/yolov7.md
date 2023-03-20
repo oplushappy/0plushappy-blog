@@ -68,7 +68,7 @@ katex: true
 對應關係 : 
 1. yolov7 $\rightarrow$ yolov7x
    1. 額外多一條由兩個卷積構成支路 : 擴大模型深度
-   2. 特徵輸入數量，concat輸出數量，過度卷積通道數 變成 1.25倍 : 擴大模型寬度
+   2. 特徵輸入的數量，concat輸出的數量，過渡的卷積通道數都變成 1.25倍 : 擴大模型寬度
 2. yolov7-w6 $\rightarrow$ yolov7-e6 $\rightarrow$ yolov7-e6e $\rightarrow$ yolov7-d6
 
 ## Trainable bag-of-freebies
