@@ -18,8 +18,8 @@ katex : true
 
 ### 創建 Models
 繼承 nn.Module
-`__init__` : 定義網路 每層結構(layer)
-`forward` : 資料如何在網路中傳遞
+`def __init__(self,)` : 定義網路 每層結構(layer)
+`def forward(self)` : 資料如何在網路中傳遞
 `super()` = `super(className,self)`，找到MOR裡，claaaName後，最先有`__init__`
 ex:
 ```python
@@ -50,24 +50,38 @@ optimizer = torch.optim.SGD(model.paramet)
 
 ```py
 def train(dataloader, model, loss_fn, optimizer):
-    size = len(dataloader.dataset)
-    model.train()
-    for batch, (X, y) in enumerate(dataloader):
-        X, y = X.to(device), y.to(device)
+  size = len(dataloader.dataset)
+  model.train()
+  for batch, (X, y) in enumerate(dataloader):
+    X, y = X.to(device), y.to(device)
 
-        # Compute prediction error
-        pred = model(X)
-        loss = loss_fn(pred, y)
+    # Compute prediction error
+    pred = model(X)
+    loss = loss_fn(pred, y)
 
-        # Backpropagation
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
+    # Backpropagation
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
 
-        if batch % 100 == 0:
-            loss, current = loss.item(), (batch + 1) * len(X)
-            print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+    if batch % 100 == 0:
+        loss, current = loss.item(), (batch + 1) * len(X)
+        print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
 ```
+
+訓練可在cpu或gpu
+```py
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"using {device}")
+```
+we can put instance to cpu or gpu
+```
+model = className().to(device)
+```
+
+
+
+
 對比模型在test dataset以確保學習
 ```py
 def test(dataloader, model, loss_fn):
