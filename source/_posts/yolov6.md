@@ -1,7 +1,7 @@
 ---
-title: yolov6
+title: RepVGG
 date: 2023-03-16 19:52:15
-tags: yolo
+tags: VGG
 katex: true
 ---
 ## RepVgg

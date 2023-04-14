@@ -1,7 +1,7 @@
 ---
-title: yolov7
+title: YOLOv7
 date: 2023-03-10 21:52:02
-tags: yolo
+tags: YOLO
 katex: true
 ---
 參考網站:

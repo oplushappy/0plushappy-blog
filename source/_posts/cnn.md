@@ -1,7 +1,7 @@
 ---
 title: CNN 卷積神蹟網路
 date: 2023-03-07 16:17:53
-tags: Deep learning
+tags: CNN
 katex: true
 ---
 參考網站:

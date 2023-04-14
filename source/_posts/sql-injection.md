@@ -1,7 +1,7 @@
 ---
-title: sql-injection
+title: Sql Injection
 date: 2023-03-12 19:20:48
-tags: network
+tags: Network
 katex: true
 ---
 

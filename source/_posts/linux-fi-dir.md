@@ -1,7 +1,7 @@
 ---
-title: linux file and directory(4)
+title: Linux File And Directory (4)
 date: 2023-03-22 13:49:08
-tags: linux
+tags: Linux
 katex : true
 ---
 ## Introduction

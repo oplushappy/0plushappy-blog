@@ -1,7 +1,7 @@
 ---
-title: network security
+title: Network Security
 date: 2023-03-06 20:32:49
-tags:
+tags: Network
 katex: true
 ---
 

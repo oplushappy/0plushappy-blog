@@ -1,5 +1,5 @@
 ---
-title: network manage
+title: Network Introduction
 date: 2023-03-06 13:42:31
 tags:
 katex: true

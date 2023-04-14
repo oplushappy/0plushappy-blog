@@ -1,5 +1,5 @@
 ---
-title: pytorch (1)
+title: PyTorch (1)
 date: 2023-03-07 16:33:10
 tags: deep learning
 katex : true

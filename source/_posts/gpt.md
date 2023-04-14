@@ -1,5 +1,5 @@
 ---
-title: gpt
+title: GPT
 date: 2023-03-08 08:43:28
 tags: NLP
 katex: true
@@ -41,3 +41,5 @@ ex:
 得到生成每個字機率
 
 <img src="../gpt/gpt_how.png">
+
+持續更新中...
