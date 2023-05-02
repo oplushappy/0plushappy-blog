@@ -1,12 +1,13 @@
 ---
 title: YOLOv3
-date: 2023-03-06 10:13:32
 tags: YOLO
 katex: true
+abbrlink: 2c51a51a
+date: 2023-03-06 10:13:32
 ---
 ### yolo演進
 <!-- <img src="source\_posts\yolov3\evolve.png"> -->
-<img src="..\yolov3\evolve.png" alt="演進" title="這是演進" >
+![這是演進](yolov3/evolve.png)
 
 ### yolo v3 原理
 **Backbone + Neck + Predict** 
@@ -15,7 +16,7 @@ katex: true
 #### Backbone
 Darknet 53
 - all 捲積層
-  <img src="../yolov3/Screen_Shot_2020-06-24_at_12.53.56_PM_QQoF5AO.png" width=300pt height=400pt title="darknet_53">
+![darknet_53](yolov3/Screen_Shot_2020-06-24_at_12.53.56_PM_QQoF5AO.png)
 
 #### Neck
 1. 產生19x19

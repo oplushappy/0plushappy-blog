@@ -1,8 +1,9 @@
 ---
 title: YOLOv7
-date: 2023-03-10 21:52:02
 tags: YOLO
 katex: true
+abbrlink: 2b3c6103
+date: 2023-03-10 21:52:02
 ---
 參考網站:
 
@@ -15,9 +16,10 @@ katex: true
 
 ### ELAN
 
-<center>
-<img src="..\yolov7\LpfaiRz.png" height=300>
-</center>
+<!-- <center> -->
+
+![](yolov7/LpfaiRz.png)
+<!-- </center> -->
 
 實際實現配置
 
@@ -33,11 +35,13 @@ katex: true
    [[-1, -3, -5, -6], 1, Concat, [1]], #10
    [-1, 1, Conv, [256, 1, 1]],  # 11
 ```
-<img src="..\yolov7/Snipaste_2023-03-16_15-48-01.png">
+
+![](yolov7/Snipaste_2023-03-16_15-48-01.png)
 
 ### E-ELAN
 
-<img src="../yolov7/Snipaste_2023-03-16_20-14-56.png" WIDTH=2000>
+![](yolov7/Snipaste_2023-03-16_20-14-56.png)
+
 等價於並行兩個ELAN結構
 實現
 ```PYTHON
@@ -64,12 +68,12 @@ katex: true
    [-1, 1, Conv, [160, 1, 1]],  # 22
    [[-1, -11], 1, Shortcut, [1]],  # 23
 ```
-<img src="../yolov7/Snipaste_2023-03-16_20-20-49.png" width=3000>
 
+![](yolov7/Snipaste_2023-03-16_20-20-49.png)
 ### 模型縮放
 
 因為ELAN涉及拼接，因此縮放需特別設計
-對應關係 : 
+對應關係 :
 
 1. yolov7 $\rightarrow$ yolov7x
    1. 額外多一條由兩個卷積構成支路 : 擴大模型深度
@@ -87,7 +91,7 @@ katex: true
 本來就有橫等連接(identity connection)，會和RepConv起衝突
 
 - 因此橫等連接不要用RepConv或必須使用RepConvN
-<img src="../yolov7/repcov.png">
+![](yolov7/repcov.png)
 
 - ELAN中卷積直接傳給拼接層也不能直接用RepConv，得用RepConv
 
@@ -104,10 +108,10 @@ katex: true
 Deep supervision : 
 
 - 淺層額外加輔助頭幫忙計算loss，也會反向傳播更新參數
-<img src="../yolov7/ds.png">
+![](yolov7/ds.png)
 
 label assignmen:
-<img src="../yolov7/dp2.png" width=600>
+![](yolov7/dp2.png)
 
 - hard label: 真實值(ground truth) 和 檢測值 做LOSS，再來給每個格子標籤
 
@@ -135,7 +139,7 @@ compute_loss = ComputeLoss(model)  # init loss class
 3. YOLOv7-W6, YOLOv7-d6, YOLOv7-e6, YOLOv7-e6e : 雲端GPU
 
 YOLOv7
-<img src="../yolov7/yolov7.png">
+![](yolov7/yolov7.png)
 
 ### BackBone
 #### Conv
@@ -161,19 +165,18 @@ class Conv(nn.Module):
 #### ELAN 
 
 右邊卷積 構成2條支路
-<img src="../yolov7/elan_4_11.png">
+![](yolov7/elan_4_11.png)
 
 #### MP1
 
 由於輸出是輸入1/4 , 類似MaxPool
-
-<img src="../yolov7/mp1_12_16.png">
+![](yolov7/mp1_12_16.png)
 
 ### Head
 
 #### SPPCSPC
 
-<img src="../yolov7/sppcspc_51.png">
+![](yolov7/sppcspc_51.png)
 
 ```PY
 class SPPCSPC(nn.Module):
@@ -200,13 +203,13 @@ class SPPCSPC(nn.Module):
 #### ELAN'
 
 右邊卷積 構成4條支路
-<img src="../yolov7/elan_pro.png">
+![](yolov7/elan_pro.png)
 
 #### MP2
 
 和MP1幾乎一樣，只是多了左側會傳東西
 
-<img src="../yolov7/mp2.png">
+![](yolov7/mp2.png)
 
 #### RepConv
 
@@ -239,7 +242,7 @@ else:
 
 #### Detect
 
-<img src="../yolov7/detect.png">
+![](yolov7/detect.png)
 
 ```py
 self.m = nn.ModuleList(nn.Conv2d(x, self.no * self.na, 1) for x in ch)  # output conv

@@ -1,9 +1,10 @@
 ---
 title: Markdown語法
-date: 2023-3-5 
+date: 2023-3-5
 updated: 2023-3-5
 description: 語法快速入門
 katex: true
+abbrlink: '162e0802'
 ---
 
 最近開始寫文章  
@@ -91,6 +92,10 @@ cout<<"hello world"
 ```
 #### IMG
 ![我是圖片](../../themes/butterfly/source/img/favicon.png "HEXO")
+
+```md
+![我是圖片](img/favicon.png "HEXO")
+```
 
 #### HIGHLIGHT
 ==我很重要==

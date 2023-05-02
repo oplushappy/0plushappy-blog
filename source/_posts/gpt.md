@@ -1,8 +1,9 @@
 ---
 title: GPT
-date: 2023-03-08 08:43:28
 tags: NLP
 katex: true
+abbrlink: 5c298aee
+date: 2023-03-08 08:43:28
 ---
 
 ## NLP 兩大模型
@@ -40,6 +41,6 @@ ex:
 一言以蔽之 文字接龍
 得到生成每個字機率
 
-<img src="../gpt/gpt_how.png">
+![](gpt/gpt_how.png)
 
 持續更新中...
