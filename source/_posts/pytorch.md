@@ -1,8 +1,9 @@
 ---
 title: PyTorch (1)
-date: 2023-03-07 16:33:10
 tags: deep learning
-katex : true
+katex: true
+abbrlink: 7146c735
+date: 2023-03-07 16:33:10
 ---
 ## Quick to start
 ### Pytorch vs Tensorflow

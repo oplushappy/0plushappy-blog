@@ -1,8 +1,9 @@
 ---
 title: Network Security
-date: 2023-03-06 20:32:49
 tags: Network
 katex: true
+abbrlink: a90bfb7f
+date: 2023-03-06 20:32:49
 ---
 
 #### 設備

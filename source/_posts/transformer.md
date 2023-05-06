@@ -26,6 +26,11 @@ Q dot K : 相似度(attan)
 ![](transformer/20129616BHmGH4ukte.png)
 
 1. Residual
-2. LayerNorm 
+2. LayerNorm
 
+#### 補充
 
+- Embedding
+  例子 : 描述哆啦A夢
+  原本 : 藍色的、白色的、長得像狸貓、手和腳是圓形
+  Embedding : [123,234] 這代表上面所有形容詞

@@ -1,8 +1,9 @@
 ---
 title: Sql Injection
-date: 2023-03-12 19:20:48
 tags: Network
 katex: true
+abbrlink: e441acd0
+date: 2023-03-12 19:20:48
 ---
 
 ### SQL 基本語法

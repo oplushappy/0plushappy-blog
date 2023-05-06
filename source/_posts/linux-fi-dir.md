@@ -1,8 +1,9 @@
 ---
 title: Linux File And Directory (4)
-date: 2023-03-22 13:49:08
 tags: Linux
-katex : true
+katex: true
+abbrlink: e830469d
+date: 2023-03-22 13:49:08
 ---
 ## Introduction
 

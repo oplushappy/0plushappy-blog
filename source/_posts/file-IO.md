@@ -1,7 +1,8 @@
 ---
 title: Linux File I/O (3)
-date: 2023-04-11 18:44:08
 tags: Linux
+abbrlink: 988d197c
+date: 2023-04-11 18:44:08
 ---
 ## Introduction
 
