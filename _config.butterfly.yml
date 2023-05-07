@@ -96,7 +96,8 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  # img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://i.pinimg.com/564x/1d/40/1c/1d401c14ff74241a297e6789b1f9645d.jpg
   effect: false
 
 # Disable all banner image
@@ -180,7 +181,7 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2 #3
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
@@ -531,8 +532,8 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
-
+# background: url(https://i.pinimg.com/564x/76/24/7f/76247f84df853e68a144d03b97c9ed1b.jpg)
+background: url(https://images.pexels.com/photos/531756/pexels-photo-531756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 # Footer Background
 footer_bg: false
 
@@ -633,7 +634,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js (配置typed.js)
@@ -648,6 +649,8 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - "Welcome to OPH Blog!🤣🤣🤣"
+    - "Hope you have a nice day!🍭🍭🍭"
 
 # Loading Animation (加載動畫)
 preloader:
@@ -891,6 +894,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
@@ -971,3 +975,55 @@ CDN:
     # artalk_js:
     # artalk_css:
     # busuanzi:
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 2 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+    - descr: CV
+      cover: https://i.pinimg.com/564x/a8/35/32/a83532bf039a6dbb224d7768e4e3ccde.jpg
+    - descr: Network
+      cover: https://i.pinimg.com/564x/4d/ee/7d/4dee7d545f1a810a51574cf525852f1e.jpg
+    - descr: Intern
+      cover: https://i.pinimg.com/564x/91/2b/dd/912bdd594eee236695c769a32d0c8929.jpg
+    - descr: Linux
+      cover: https://i.pinimg.com/originals/c1/9d/62/c19d6274e1fd53c5ca46cdafccb4cbc9.gif
+    - descr: NLP
+      cover: https://i.pinimg.com/564x/ba/68/a3/ba68a341adfc4fba62469f53b34904e2.jpg
+    # - descr: 
+    #   cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
+
+
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
+# 主页卡片样式
+# Docs: https://akilar.top/posts/d6b69c49/
+# index_card_style: multicard # slidecard | multicard
+index_card_style: slidecard

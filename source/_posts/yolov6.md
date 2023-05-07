@@ -1,9 +1,13 @@
 ---
 title: RepVGG
-tags: VGG
+tags: CV
 katex: true
 abbrlink: f5d80f0d
 date: 2023-03-16 19:52:15
+cover: https://i.pinimg.com/564x/31/b9/79/31b9794a0bfd77c3f4e1718901bb3fb1.jpg
+description: 本文將總結RepVgg基礎知識
+categories:
+- CV
 ---
 ## RepVgg
 ### Vgg

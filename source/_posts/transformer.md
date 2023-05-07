@@ -4,6 +4,10 @@ tags: NLP
 katex: true
 abbrlink: e0d2147a
 date: 2023-03-09 17:09:22
+cover: https://i.pinimg.com/736x/df/13/ab/df13ab0c25a65166dd20c2666d5220c8.jpg
+description: 本文將總結Transformer基礎知識
+categories:
+- NLP
 ---
 ### 簡單來說
 輸入 -> Encoding -> Decoding -> 輸出

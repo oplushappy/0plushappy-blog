@@ -2,7 +2,12 @@
 title: Intern_1
 abbrlink: 2c7afbf5
 date: 2023-04-14 19:11:04
+description: 本文將分享網管工作經驗
+cover: https://i.pinimg.com/564x/91/7f/15/917f15f940a67c5e8ded81a0836860d7.jpg
+swiper_index: 70
 tags: Intern
+categories:
+- Intern
 ---
 
 - 時間 : 2023/4/14

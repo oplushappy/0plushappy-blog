@@ -3,6 +3,10 @@ title: Intern_2
 tags: Intern
 abbrlink: c6e57a8d
 date: 2023-04-24 19:43:28
+description: 本文將分享網管工作經驗
+cover: https://i.pinimg.com/564x/47/25/c5/4725c57516f344f9ead2ed4372e943f9.jpg
+categories:
+- Intern
 ---
 
 <!-- - 時間 : 2023/4/24

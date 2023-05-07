@@ -3,6 +3,7 @@ title: Markdown語法
 date: 2023-3-5
 updated: 2023-3-5
 description: 語法快速入門
+cover: https://i.pinimg.com/564x/23/5f/b7/235fb791b56e333ba8cb2ec950f6ef3d.jpg
 katex: true
 abbrlink: '162e0802'
 ---

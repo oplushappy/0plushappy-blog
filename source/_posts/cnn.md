@@ -1,9 +1,14 @@
 ---
 title: CNN 卷積神蹟網路
-tags: CNN
+# tags: CV
 katex: true
 abbrlink: e84df8a0
 date: 2023-03-07 16:17:53
+cover: https://i.pinimg.com/564x/c7/96/f1/c796f1c2e7470ed1b075be31d7c5f90b.jpg
+description: 本文將總結CNN相關基礎知識
+# swiper_index: 65
+categories:
+- CV
 ---
 參考網站:
 [卷积的in_channel与out_channel](https://blog.csdn.net/qq_51533157/article/details/122789563)

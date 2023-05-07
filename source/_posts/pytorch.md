@@ -1,9 +1,13 @@
 ---
 title: PyTorch (1)
-tags: deep learning
+tags: CV
 katex: true
 abbrlink: 7146c735
 date: 2023-03-07 16:33:10
+description: 本文將總結Pytorch基本操作
+cover: https://i.pinimg.com/564x/f0/06/80/f006806312dbf953a01945bc57c25740.jpg
+categories:
+- CV
 ---
 ## Quick to start
 ### Pytorch vs Tensorflow

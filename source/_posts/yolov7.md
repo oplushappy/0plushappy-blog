@@ -1,9 +1,14 @@
 ---
 title: YOLOv7
-tags: YOLO
+tags: CV
 katex: true
 abbrlink: 2b3c6103
 date: 2023-03-10 21:52:02
+cover: https://i.pinimg.com/564x/9f/ad/d1/9fadd166526b441304534b83e2545810.jpg
+description: 本文將總結YOLOv7相關知識
+swiper_index: 100
+categories:
+- CV
 ---
 參考網站:
 

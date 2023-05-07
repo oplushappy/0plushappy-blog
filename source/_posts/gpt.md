@@ -4,6 +4,10 @@ tags: NLP
 katex: true
 abbrlink: 5c298aee
 date: 2023-03-08 08:43:28
+description: 本文將初步介紹GPT
+cover: https://i.pinimg.com/564x/5d/b8/79/5db879e14829d1559e00f70638098c15.jpg
+categories:
+- NLP
 ---
 
 ## NLP 兩大模型

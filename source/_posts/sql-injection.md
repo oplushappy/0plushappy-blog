@@ -4,6 +4,11 @@ tags: Network
 katex: true
 abbrlink: e441acd0
 date: 2023-03-12 19:20:48
+description: 本文將總結SQL注入基本知識
+cover: https://i.pinimg.com/564x/19/f7/46/19f746ebbe2f4553fa675539423c74e1.jpg
+swiper_index: 92
+categories:
+- Network
 ---
 
 ### SQL 基本語法

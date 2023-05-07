@@ -4,6 +4,10 @@ tags: Linux
 katex: true
 abbrlink: e830469d
 date: 2023-03-22 13:49:08
+cover: https://i.pinimg.com/564x/b1/83/48/b183487edf6a4157ef7ec797037e8023.jpg
+description: 本文將總結Linux相關基礎知識
+categories:
+- Linux
 ---
 ## Introduction
 

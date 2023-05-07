@@ -3,6 +3,10 @@ title: Intern_3
 tags: Intern
 abbrlink: 4894284d
 date: 2023-05-05 12:46:59
+description: 本文將分享網管工作經驗
+cover: https://i.pinimg.com/474x/fc/f8/63/fcf863e1f6e39cdbd7ca0c586b5d1333.jpg
+categories:
+- Intern
 ---
 
 <!-- - 指導人 : Dino -->

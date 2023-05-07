@@ -3,6 +3,11 @@ title: Linux File I/O (3)
 tags: Linux
 abbrlink: 988d197c
 date: 2023-04-11 18:44:08
+cover: https://i.pinimg.com/736x/98/bd/42/98bd42ee392f1604fb0d782808c6ee2e.jpg
+description: 本文將總結Linux相關基礎知識
+swiper_index: 90
+categories:
+- Linux
 ---
 ## Introduction
 
