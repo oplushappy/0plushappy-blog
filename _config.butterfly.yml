@@ -989,15 +989,15 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 2 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: CV
+    - descr: 來探索CV領域吧
       cover: https://i.pinimg.com/564x/a8/35/32/a83532bf039a6dbb224d7768e4e3ccde.jpg
-    - descr: Network
+    - descr: 底層到底怎麼運作
       cover: https://i.pinimg.com/564x/4d/ee/7d/4dee7d545f1a810a51574cf525852f1e.jpg
-    - descr: Intern
+    - descr: 探索GPT的秘密
       cover: https://i.pinimg.com/564x/91/2b/dd/912bdd594eee236695c769a32d0c8929.jpg
-    - descr: Linux
+    - descr: 網管是做什麼
       cover: https://i.pinimg.com/originals/c1/9d/62/c19d6274e1fd53c5ca46cdafccb4cbc9.gif
-    - descr: NLP
+    - descr: 認識我們最好的朋友
       cover: https://i.pinimg.com/564x/ba/68/a3/ba68a341adfc4fba62469f53b34904e2.jpg
     # - descr: 
     #   cover: https://npm.elemecdn.com/akilar-candyassets/image/cover6.webp
