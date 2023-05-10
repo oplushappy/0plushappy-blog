@@ -1,6 +1,6 @@
 ---
-title: YOLOv7
-tags: CV
+title: YOLOv7教學
+tags: YOLO
 katex: true
 abbrlink: 2b3c6103
 date: 2023-03-10 21:52:02
@@ -17,6 +17,9 @@ categories:
 
 <!-- # YOLO V7    -->
 
+## 整體結構圖
+
+![](yolov7/struct.png)
 ## 創新點
 
 ### ELAN
