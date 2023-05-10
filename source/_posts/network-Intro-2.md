@@ -182,7 +182,33 @@ Ack(不限)
   ssh username@ip
   ```
 
-- 由於window 可能會因為加密問題顯示錯誤，因此我們可以到 **/.ssh config** 改設定
+## ssh 無法連線
+
+- 錯誤訊息 : no matching key exchange method found(沒有對應加密鑰匙)
+- 由於是不同密鑰交換演算法
+
+1. 一勞永逸
+   - 由於window 可能會因為加密問題顯示錯誤，因此我們可以到 **/.ssh config** 改設定
+   - 通常為查看 `C:\Users\用戶名\.ssh`，查看是否有config文件，如果没有.ssh，自己新建一個，裡面加 :
+
+    ``` txt
+      Host *
+        KexAlgorithms +diffie-hellman-group-exchange-sha1
+    ```  
+    
+    or
+
+    ```txt
+      Host *
+        KexAlgorithms +diffie-hellman-group14-sha1
+    ```
+
+2. 快速版
+   - 用 powershell、cmd、mac : 加 -oKexAlgorithms=+diffie-hellman-group14-sha1
+  
+    ```sh
+    ssh -oKexAlgorithms=+diffie-hellman-group14-sha1 username@ip
+    ```
 
 ### Proxy
 
