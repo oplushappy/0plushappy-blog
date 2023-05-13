@@ -1,10 +1,10 @@
 ---
-title: Network Introduction
+title: Network Introduction (1)
 katex: true
 abbrlink: f3ba10e
 date: 2023-03-06 13:42:31
 tags: Network
-description: 本文將總結網路基本認識
+description: 本文將簡單介紹網路
 cover: https://i.pinimg.com/564x/41/7d/4a/417d4a671bbfdf8649505214bd2b209a.jpg
 categories:
 - Network
