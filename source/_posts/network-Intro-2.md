@@ -194,13 +194,9 @@ Ack(不限)
     ``` txt
       Host *
         KexAlgorithms +diffie-hellman-group-exchange-sha1
-    ```  
-    
-    or
-
-    ```txt
       Host *
         KexAlgorithms +diffie-hellman-group14-sha1
+      加其中一個(也可以都加)
     ```
 
 2. 快速版
