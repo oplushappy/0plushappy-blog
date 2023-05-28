@@ -6,7 +6,7 @@ description: 本文將分享網管工作經驗
 cover: https://i.pinimg.com/564x/dc/d8/c5/dcd8c5ce98aac3878f5e2d7c40aa5d3a.jpg
 categories:
 - Intern
-- swiper_index: 102
+swiper_index: 102
 ---
 
 
