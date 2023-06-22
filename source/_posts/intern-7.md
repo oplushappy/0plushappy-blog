@@ -60,8 +60,10 @@ swiper_index: 104
     ```txt
     懷疑可能是Mac 、 IPv4(6) DNS Proxy 、 Running-config 有錯誤
     ```
+    
     `sh log | include 1/1/6`
-    ![image|648x322, 75%](intern-7/s5.png)
+    ![image|648x322, 75%](intern-7/s5.jpg)
+    
     ```
     非常有可能是手設 IPv4 or DNS 
     ```
