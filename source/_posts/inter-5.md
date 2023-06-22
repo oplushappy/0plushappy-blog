@@ -1,7 +1,7 @@
 ---
-title: intern_5
+title: Intern_5
 date: 2023-05-26 09:05:45
-tags: Inter
+tags: Intern
 description: 本文將分享網管工作經驗 
 cover: https://i.pinimg.com/564x/dc/d8/c5/dcd8c5ce98aac3878f5e2d7c40aa5d3a.jpg
 categories:

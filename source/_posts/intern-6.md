@@ -1,7 +1,7 @@
 ---
-title: intern_6
+title: Intern_6
 date: 2023-06-21 00:47:08
-tags: Inter
+tags: Intern
 description: 本文將分享網管工作經驗 
 cover : https://i.pinimg.com/564x/fa/5c/14/fa5c14aa09a048faa0e3196b54193f36.jpg
 categories:
