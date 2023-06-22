@@ -1,5 +1,5 @@
 ---
-title: intern-7
+title: Intern-7
 date: 2023-06-22 16:22:40
 tags: Intern
 description: 本文將分享網管工作經驗 
