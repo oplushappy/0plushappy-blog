@@ -1,11 +1,11 @@
 ---
-title: Network Security
+title: Network Introduction (3)
 tags: Network
 katex: true
 abbrlink: a90bfb7f
 date: 2023-03-06 20:32:49
 cover: https://i.pinimg.com/564x/0d/a8/0c/0da80c00d396748e93fdece8fcadaf74.jpg
-description: 本文將總結網路安全相關基礎知識
+description: 本文將總結網路相關基礎知識
 swiper_index: 75
 categories:
 - Network
