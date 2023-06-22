@@ -1,5 +1,5 @@
 ---
-title: Network Introduction (3)
+title: Network Introduction (1)
 tags: Network
 katex: true
 abbrlink: a90bfb7f
