@@ -180,7 +180,7 @@ swiper_index: 102
 
 10. 更正proxy 
      因為log 不斷出現這個
-    ![image|690x30](inter-5/15jpg)
+    ![image|690x30](inter-5/15.jpg)
     1. 一直出現 ip 0.0.0.0
      ```
      懷疑手動proxy
